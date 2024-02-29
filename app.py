@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 import joblib
-from config import port_number 
+from config import port_number
+ 
 
 app = Flask(__name__)
 model = joblib.load('apple.pkl')  # Load your trained model
